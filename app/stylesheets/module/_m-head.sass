@@ -1,0 +1,72 @@
+.m-head
+  &1
+    position: relative
+    font-size: 24px
+    font-weight: bold
+    color: #fff
+    background-color: $color-base
+    padding: 22px 10px 22px 70px
+    border: 5px solid #fff
+    border-radius: 12px
+    margin-right: 4px
+    box-shadow: 2px 2px 0 $color-background
+    line-height: 1.2
+    &-num
+      width: 50px
+      height: 50px
+      background-color: rgba(#fff, 0.2)
+      position: absolute
+      left: 10px
+      top: 50%
+      margin-top: -25px
+      border-radius: 50%
+      display: table
+      text-align: center
+    & + .m-head2
+      margin-top: 20px
+
+  &2
+    font-size: 16px
+    color: #fff
+    font-weight: bold
+    background-color: $color-base2
+    box-shadow: 0 2px 0 $color-background2
+    border-radius: 0 25px 25px 0
+    padding: 10px
+    margin-right: 10px
+    & + p
+      margin-top: 20px
+    & + .m-head3
+      margin-top: 20px
+    & + .m-list
+      margin-top: 20px
+  &3
+    font-size: 15px
+    font-weight: bold
+    position: relative
+    padding-left: 10px
+    &-text
+      position: relative
+      z-index: 2
+    &:after
+      content: ""
+      width: 90%
+      height: 70%
+      background-color: $color-link
+      position: absolute
+      left: 0
+      bottom: 0
+    & + p
+      margin-top: 18px
+  &4
+    font-size: 15px
+    font-weight: bold
+    color: $color-base2
+    padding: 0 20px 0 0
+    &-title
+      padding: 0 0 5px 10px
+    &-border
+      height: 1px
+      background-color: $color-base2
+    & + ul.m-list
+      margin-top: 15px

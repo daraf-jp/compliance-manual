@@ -1,0 +1,89 @@
+.top
+
+  .content
+    margin-top: -60px
+    padding-top: 60px
+    &:after
+      content: ""
+      display: block
+      margin-bottom: 60px
+
+  .top-image
+    margin-bottom: 60px
+    img
+      display: block
+      width: 100%
+  p
+    padding: 0 10px
+    & + .m-head2
+      margin-top: 35px
+    & + p
+      margin-top: 15px
+    & + .m-head4
+      margin-top: 20px
+  .red
+    color: $color-red
+
+  #first
+    .sub-ex
+      font-size: 12px
+
+    .list-title
+      font-size: 15px
+      font-weight: bold
+      color: $color-base2
+
+  #invasion-of-pirates
+    a
+      text-decoration: underline
+
+  #management-of-uniforms
+    table
+      border: 1px solid $color-background3
+      margin-top: 10px
+      tbody
+        tr
+          th
+            font-weight: normal
+            &.top-head
+              background-color: $color-background3
+              color: #fff
+              border-right: 1px solid #fff
+              font-size: 13px
+              padding: 5px
+              text-align: center
+              &:last-child
+               border-right: none
+            &.side-head
+              border: 1px solid $color-background3
+              font-size: 13px
+              padding: 5px
+              color: $color-background3
+              background-color: rgba($color-base, 0.1)
+          td
+            border: 1px solid $color-background3
+            text-align: center
+            font-weight: bold
+
+  #page-top
+    position: fixed
+    bottom: 20px
+    right: 20px
+    z-index: 9998
+    a
+      background-color: $color-base
+      text-decoration: none
+      color: rgba(255, 255, 255, 0.9)
+      width: 35px
+      height: 35px
+      border: 1px solid #fff
+      text-align: center
+      display: table
+      border-radius: 5px
+      font-size: 24px
+      opacity: 0.9
+      &:hover
+        text-decoration: none
+        opacity: 1
+      .fa
+        display: table-cell

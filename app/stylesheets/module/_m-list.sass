@@ -1,0 +1,64 @@
+ol.m-list
+  li
+    position: relative
+    counter-increment: section
+    padding: 5px 10px 0 48px
+    min-height: 32px
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+    &:before
+      content: ""
+      display: block
+      width: 32px
+      height: 32px
+      background-color: $color-base2
+      border-radius: 50%
+      position: absolute
+      left: 10px
+      top: 0
+    &:after
+      content: counter(section)
+      display: block
+      width: 24px
+      height: 24px
+      border: 3px solid #fff
+      text-align: center
+      background-color: $color-base2
+      color: #fff
+      font-size: 16px
+      border-radius: 50%
+      position: absolute
+      left: 11px
+      top: 1px
+  & + ul.m-list
+    margin-top: 30px
+ul.m-list
+  li
+    position: relative
+    min-height: 20px
+    padding: 0 10px 0 36px
+    margin-bottom: 15px
+    &:before
+      content: ""
+      display: block
+      width: 20px
+      height: 20px
+      border-radius: 3px
+      background-color: $color-base2
+      position: absolute
+      left: 10px
+      top: 0
+    &:after
+      content: ""
+      display: block
+      width: 12px
+      height: 12px
+      background-color: rgba(#fff, 0.6)
+      border-radius: 50%
+      position: absolute
+      left: 14px
+      top: 4px
+.m-list
+  & + .m-head2
+    margin-top: 35px

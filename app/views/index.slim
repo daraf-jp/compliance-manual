@@ -1,2 +1,158 @@
-h1
-  | index.slim
+doctype html
+html
+  include _head
+  body.top.drawer.drawer--right
+    .l-wrapper
+      include _header
+      .l-main
+        .top-image
+          img src="./img/top.png"
+
+        / 1 はじめに
+        include _1-first
+
+        / 2 所属店舗移動または責任者交代
+        include _2-move-change
+
+        / 3 入店時の注意点
+        include _3-notes-on-visiting
+
+        / 4 退店時の注意点
+        include _4-notes-on-closures
+
+        / 5 鍵の保管
+        include _5-storage-of-key
+
+        / 6 鍵保持者の出勤遅れ
+        include _6-attendance-delay-key-holder
+
+        / 7 衛生管理
+        include _7-hygiene-management
+
+        / 8 レジ誤差
+        include _8-register-error
+
+        / 9 火事
+        include _9-fire
+
+        / 10 地震
+        include _10-earthquake
+
+        / 11 ライフラインの復旧
+        include _11-restoration-of-lifeline
+
+        / 12 ストーカー被害
+        include _12-stalker-damage
+
+        / 13 賊の侵入
+        include _13-invasion-of-pirates
+
+        / 14 店内での迷惑行為
+        include _14-nuisance-in-store
+
+        / 15 セールス電話・押し売り等
+        include _15-sales-telephone-and-hard-sell
+
+        / 16 横領
+        include _16-embezzlement
+
+        / 17 隠ぺい
+        include _17-hiding
+
+        / 18 紛失
+        include _18-loss
+
+        / 19 クレーム
+        include _19-claim
+
+        / 20 保険
+        include _20-insurance
+
+        / 21 労災
+        include _21-workers-compensation-insurance
+
+        / 22 制服の管理
+        include _22-management-of-uniforms
+
+        / 23 身嗜み
+        include _23-appearance
+
+        / 24 食材管理
+        include _24-food-management
+
+        / 25 欠品
+        include _25-shortage
+
+        / 26 宅配
+        include _26-delivery
+
+        / 27 テイクアウト電話注文
+        include _27-take-telephone-order
+
+        / 28 通勤時の事故
+        include _28-commuting-accident
+
+        / 29 配達時の事故
+        include _29-delivery-accident
+
+        / 30 36協定
+        include _30-36-agreements
+
+        / 31 雇用契約書の提出
+        include _31-submission-employment-contract
+
+        / 32 契約書類の偽造(代筆)
+        include _32-forgery-contract-documents
+
+        / 33 スタッフ同士の交流
+        include _33-exchanges-between-staff
+
+        / 34 入社・退社時
+        include _34-joined-leaving
+
+        / 35 寮の管理
+        include _35-dormitory-management
+
+        / 36 外国人採用
+        include _36-foreign-adoption
+
+        / 37 パソコンデータ消失
+        include _37-pc-data-loss
+
+        / 38 個人情報管理
+        include _38-personal-information-management
+
+        / 39 パワーハラスメント
+        include _39-power-harassment
+
+        / 40 SNS投稿
+        include _40-sns-post
+
+        / 41 マニュアル遵守
+        include _41-manual-compliance
+
+    / ページトップへ戻る
+    #page-top
+      a href=""
+        i.fa.fa-arrow-up.table-cell.align-middle
+
+javascript:
+  $(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+  });
